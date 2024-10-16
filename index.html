@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="expanded-icons">
+            <img id="navbar-logo" src="logo.png">
+            <img src="menuIcon.png" id="menu-icon">
+        </div>
+        <span><a href="index.html">Login</a></span>
+        <span><a href="signup.html">Sign Up</a></span>
+        <span id="login-btn" onclick="location.replace('users.html')" style="cursor: pointer;">Users</a></span>
+    </div>
+
+    <main>
+        <form>
+        <div class="login">
+            <div id="loginbar"></div>
+
+            <p id="text">Enter Your Username</p>
+
+            <div class="innercontainer">
+                <img src="profile.png" style="height: 90px; width: 85px;">
+                <input type="text" id="input" required>
+            </div>
+
+            <input type="submit" value="Next" id="loginbarbtn">
+        </div>
+        </form>
+    </main>
+
+    <script src="navbar.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

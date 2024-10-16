@@ -1,0 +1,90 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vw;
+}
+
+/* @keyframes baranimation {
+    0% {
+        background: linear-gradient(90deg, #1a73e8 0%, #fff 0%);
+    }
+    20% {
+        background: linear-gradient(90deg, #fff 0%, #1a73e8 20%, #fff 40%);
+    }
+    40% {
+        background: linear-gradient(90deg, #fff 0%, #1a73e8 40%, #fff 60%);
+    }
+    60% {
+        background: linear-gradient(90deg, #fff 0%, #1a73e8 60%, #fff 80%);
+    }
+    80% {
+        background: linear-gradient(90deg, #fff 0%, #1a73e8 80%, #fff 100%);
+    }
+} */
+
+#loginbar{
+    width: 100%;
+    height: 10px;
+    /* border: 1px solid black; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* animation: baranimation 2s ease-in-out 2; */
+}
+
+.login{
+    background-color: #fff;
+    width: 80vw;
+    height: 70vh;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#text{
+    margin-top: 50px;
+    margin-left: 38.5vw;
+    font-size: larger;
+}
+
+.innercontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#input{
+    width: 38%;
+    height: 20px;
+    min-width: 250px;
+}
+
+#input:focus{
+    outline: none;
+    border: 3px solid #1a73e8;
+    border-radius: 5px;
+}
+
+#loginbarbtn{
+    margin-top: 50px;
+    height: 28px;
+    width: 85px;
+    border-radius: 50px;
+    border: 0.2px solid black;
+    background-color: #1a73e8;
+    color:#fff;
+    margin-left: 60vw;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:700px) {
+    #loginbarbtn{
+        padding-left: 10px;
+        padding-top: 4px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #text{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
